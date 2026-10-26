@@ -1,0 +1,178 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fffaf5;
+  color: #2c1b14;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: min(1100px, calc(100% - 32px));
+  margin: 0 auto;
+}
+
+.header {
+  background: #fff;
+  border-bottom: 1px solid #f1dfd1;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 72px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #d76c3d;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  color: #5a4033;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+  gap: 32px;
+  align-items: center;
+  padding: 64px 0;
+}
+
+.eyebrow {
+  color: #d76c3d;
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.hero h1,
+.page h1 {
+  margin: 12px 0 16px;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  line-height: 1.1;
+}
+
+.hero p,
+.feature-card p,
+.track-card p,
+.admin-card p,
+.custom-form input,
+.custom-form textarea {
+  color: #5d483f;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.btn {
+  display: inline-block;
+  border-radius: 999px;
+  padding: 12px 18px;
+  text-decoration: none;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+}
+
+.btn.primary {
+  background: #d76c3d;
+  color: white;
+}
+
+.btn.secondary {
+  background: #f8e8dc;
+  color: #2c1b14;
+}
+
+.hero-card,
+.feature-card,
+.track-card,
+.admin-card,
+.product-card {
+  background: #ffffff;
+  border: 1px solid #f1dfd1;
+  border-radius: 22px;
+  box-shadow: 0 10px 30px rgba(107, 67, 44, 0.08);
+}
+
+.hero-card {
+  padding: 24px;
+  text-align: center;
+}
+
+.cake-art {
+  font-size: 5rem;
+  margin: 18px 0;
+}
+
+.feature-grid,
+.admin-grid,
+.product-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  margin-top: 20px;
+}
+
+.feature-card,
+.admin-card,
+.product-card,
+.track-card {
+  padding: 24px;
+}
+
+.page {
+  padding: 36px 0 64px;
+}
+
+.custom-form {
+  display: grid;
+  gap: 16px;
+  max-width: 620px;
+  margin-top: 24px;
+}
+
+.custom-form input,
+.custom-form textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: 1px solid #f1dfd1;
+  background: white;
+}
+
+.custom-form textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.product-card h3 {
+  margin: 0 0 8px;
+}
+
+.product-card .price {
+  color: #d76c3d;
+  font-weight: 700;
+}
+
+.track-card {
+  max-width: 420px;
+}

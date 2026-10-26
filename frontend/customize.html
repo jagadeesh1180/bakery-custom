@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Customize Order | Bakery Custom</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav container">
+        <div class="logo">Bakery Custom</div>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="products.html">Products</a>
+          <a href="customize.html">Customize</a>
+          <a href="track-order.html">Track Order</a>
+          <a href="admin.html">Admin</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container page">
+      <h1>Customize Your Order</h1>
+      <form class="custom-form" id="customizeForm">
+        <input type="text" placeholder="Customer Name" required />
+        <input type="text" placeholder="Product Type" required />
+        <input type="text" placeholder="Flavor" required />
+        <input type="text" placeholder="Occasion" />
+        <textarea placeholder="Special Instructions"></textarea>
+        <button type="submit" class="btn primary">Submit Order</button>
+      </form>
+    </main>
+
+    <script src="js/customize.js"></script>
+  </body>
+</html>

@@ -1,29 +1,64 @@
 # Bakery Custom
 
-A simple HTML, CSS, and JavaScript bakery order portal.
+This project is organized into a frontend, backend, and documentation structure.
 
-## Project structure
+## Structure
 
 ```text
 bakery-custom/
-├── index.html
-├── css/
-│   └── styles.css
-├── js/
-│   └── script.js
-├── assets/
-│   └── images/
+├── frontend/
+│   ├── index.html
+│   ├── products.html
+│   ├── customize.html
+│   ├── track-order.html
+│   ├── admin.html
+│   ├── css/
+│   │   ├── style.css
+│   │   └── responsive.css
+│   ├── js/
+│   │   ├── main.js
+│   │   ├── products.js
+│   │   ├── customize.js
+│   │   ├── track-order.js
+│   │   └── admin.js
+│   └── assets/
+│       └── images/
+├── backend/
+│   ├── server.js
+│   ├── package.json
+│   ├── .env.example
+│   ├── config/
+│   │   └── db.js
+│   ├── models/
+│   │   ├── Product.js
+│   │   └── Order.js
+│   ├── routes/
+│   │   ├── productRoutes.js
+│   │   └── orderRoutes.js
+│   ├── controllers/
+│   │   ├── productController.js
+│   │   └── orderController.js
+│   └── middleware/
+│       └── errorHandler.js
+├── docs/
+│   ├── project-report.md
+│   └── api-documentation.md
+├── .gitignore
 └── README.md
 ```
 
-## Run locally
+## Run frontend
 
-Open `index.html` in your browser.
+Open `frontend/index.html` in a browser.
 
-You can also use a local static server if you prefer:
+## Run backend
 
 ```bash
-python -m http.server 8000
+cd backend
+npm install
+npm start
 ```
 
-Then visit `http://localhost:8000`.
+## Notes
+
+This is a starter project structure for a bakery custom order portal.
