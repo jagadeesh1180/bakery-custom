@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bakery Custom</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav">
+        <div class="brand">
+          <span class="brand-mark">B</span>
+          Bakery Custom
+        </div>
+
+        <nav class="menu">
+          <a href="#home">Home</a>
+          <a href="#menu">Menu</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <button class="cart-button" id="cartButton">
+          Cart <span id="cartCount">0</span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="container hero-content">
+          <div class="hero-text">
+            <p class="eyebrow">Freshly baked daily</p>
+            <h1>Customized cakes and bakery delights</h1>
+            <p>
+              Order your favorite cakes, cookies, pastries, and celebration items
+              made fresh for every occasion.
+            </p>
+            <div class="hero-actions">
+              <a href="#menu" class="primary-btn">Order Now</a>
+              <a href="#about" class="secondary-btn">Learn More</a>
+            </div>
+          </div>
+
+          <div class="hero-card">
+            <div class="cake-preview">
+              <div class="cake-top"></div>
+              <div class="cake-layer"></div>
+              <div class="cake-layer small"></div>
+            </div>
+            <div class="mini-info">
+              <p>Best Seller</p>
+              <h3>Chocolate Truffle Cake</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="menu-section" id="menu">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Our collection</p>
+            <h2>Popular bakery picks</h2>
+          </div>
+
+          <div class="product-grid" id="productGrid"></div>
+        </div>
+      </section>
+
+      <section class="about-section" id="about">
+        <div class="container about-box">
+          <div class="about-text">
+            <p class="eyebrow">About us</p>
+            <h2>Fresh ingredients, handmade joy</h2>
+            <p>
+              We create custom cakes and baked goods for birthdays, weddings,
+              gifting, and everyday treats. Every recipe is crafted with quality
+              ingredients and careful attention to detail.
+            </p>
+          </div>
+
+          <div class="about-stats">
+            <div>
+              <strong>5k+</strong>
+              <span>Orders</span>
+            </div>
+            <div>
+              <strong>20+</strong>
+              <span>Recipes</span>
+            </div>
+            <div>
+              <strong>100%</strong>
+              <span>Fresh</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact">
+        <div class="container contact-box">
+          <div>
+            <p class="eyebrow">Contact</p>
+            <h2>Customize your order</h2>
+          </div>
+
+          <form class="order-form" id="orderForm">
+            <input type="text" placeholder="Your name" required />
+            <input type="email" placeholder="Email address" required />
+            <input type="text" placeholder="Event date" />
+            <textarea placeholder="Order details"></textarea>
+            <button type="submit" class="primary-btn">Send Inquiry</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <aside class="cart-panel" id="cartPanel">
+      <div class="cart-header">
+        <h3>Your Cart</h3>
+        <button id="closeCart" class="close-btn">×</button>
+      </div>
+      <div id="cartItems" class="cart-items"></div>
+      <div class="cart-footer">
+        <div class="total-row">
+          <span>Total</span>
+          <strong id="cartTotal">$0.00</strong>
+        </div>
+        <button class="checkout-btn">Checkout</button>
+      </div>
+    </aside>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
